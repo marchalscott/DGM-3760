@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url("mexico.jpg");
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	color: #242f40;
+}
+
+fieldset {
+	background-color: #242f40;
+	color: #fff;
+	border-radius: 0em;
+	margin: 1.5em 0;
+	border: #000 solid 1px;
+	max-width: 400px	
+}
+
+legend {
+	color: #fff;
+	margin-left: 6%;
+	padding: .5em;
+	border: #000 solid 1px;
+	background-color: #cca436;
+	border-radius: 0em;
+	width: 50%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+}
+
+label span {
+	font-size: .8em;
+	color: #fff;
+}
+
+input.submitBtn {
+	display: block;
+	padding: .5em;
+	color: #fff;
+	width: 20%;
+	border-radius: 0px;
+	background-color: #242f40;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
