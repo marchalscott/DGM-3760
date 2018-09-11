@@ -5,8 +5,8 @@
 	"default": {
 
 		"host": "ftp.marchaleardley.com",
-		"username": "marchale",  // or null for anonymous login
-		"password": "ThirstyBalloon612!!",
+		"username": "",  // or null for anonymous login
+		"password": "",
 		"path": "/public_html/dgm3760/01a-GET",
 
 		"upload_on_save": true, // set *false* if you do not want to upload on save!
