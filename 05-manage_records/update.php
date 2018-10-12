@@ -61,4 +61,12 @@ $found = mysqli_fetch_array($result);
 		<input type="submit" value="Update Employee" class="submitBtn">
 	</form>
 </body>
+<footer>
+	<div>
+		<ul>
+			<li><a href="https://marchaleardley.com/dgm3760/05-manage_records/">Add</a></li>
+			<li><a href="https://marchaleardley.com/dgm3760/05-manage_records/delete.php">Delete</a></li>
+		</ul>
+	</div>
+</footer>
 </html>

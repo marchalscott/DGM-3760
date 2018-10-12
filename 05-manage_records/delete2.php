@@ -44,6 +44,7 @@ $found = mysqli_fetch_array($result);
 <html>
 <head>
 	<title>Employee Directory Detail</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <h1>Deleting an Employee</h1>

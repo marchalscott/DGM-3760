@@ -26,6 +26,7 @@ mysqli_close($dbconnection);
 <html>
 <head>
 	<title>Employee Successfully Added</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 

@@ -70,7 +70,6 @@ mysqli_close($dbconnection);
 	<title>Employee Successfully Added</title>
 </head>
 <body>
-
 	<h1>Employee Successfully Added</h1>
 	<?php
 
@@ -82,4 +81,12 @@ mysqli_close($dbconnection);
 	?>
 
 </body>
+<footer>
+	<div>
+		<ul>
+			<li><a href="https://marchaleardley.com/dgm3760/05-manage_records/">Add</a></li>
+			<li><a href="https://marchaleardley.com/dgm3760/05-manage_records/delete.php">Delete</a></li>
+		</ul>
+	</div>
+</footer>
 </html>

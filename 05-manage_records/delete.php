@@ -15,6 +15,7 @@ $result = mysqli_query($dbconnection, $query) or die ('Query failed');
 <html>
 <head>
 	<title>Remove Employees</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <h1>Delete Employee</h1>
@@ -35,4 +36,12 @@ mysqli_close($dbconnection);
 
 ?>
 </body>
+<footer>
+	<div>
+		<ul>
+			<li><a href="https://marchaleardley.com/dgm3760/05-manage_records/">Add</a></li>
+			<li><a href="https://marchaleardley.com/dgm3760/05-manage_records/delete.php">Delete</a></li>
+		</ul>
+	</div>
+</footer>
 </html>
