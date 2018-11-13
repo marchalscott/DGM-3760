@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	max-width: 80%;
+	padding: .5em;
+}
+
+h2 {
+	display: block;
+}
+
+nav {
+	background-color: #242f40;
+	display: block;
+	padding: 0px 0px 20px 0;
+	margin: 5px;
+}
+
+fieldset {
+	background-color: #242f40;
+	color: #fff;
+	border-radius: 0em;
+	border: #000 solid 1px;
+	max-width: 30%;
+}
+
+legend {
+	color: #fff;
+	margin-left: 6%;
+	padding: .5em;
+	border: #000 solid 1px;
+	background-color: #cca436;
+	border-radius: 0em;
+	width: 50%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+label {
+	display: block;
+}
+
+label span {
+	font-size: .8em;
+	color: #fff;
+}
+
+ul li {
+	display: block;
+}
+
+ul li a {
+	display: block;
+	float: left;
+	padding: 5px;
+	text-decoration: none;
+	color: white;
+}
+
+input.submitBtn {
+	display: block;
+	padding: .5em;
+	color: #fff;
+	width: 20%;
+	border-radius: 0px;
+	background-color: #242f40;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+
+footer {
+	background-color: black;
+	display: block;
+	margin: 0 auto;
+}
+
+footer ul {
+	display: block;
+	margin: 0 auto;
+}
+
+footer ul li {
+	display: block;
+	float: left;
+	margin: 0 auto;
+	padding: 10px;
+}
+
