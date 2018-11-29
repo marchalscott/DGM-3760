@@ -7,7 +7,7 @@
 		"host": "ftp.marchaleardley.com",
 		"username": "marchale",  // or null for anonymous login
 		"password": "ThirstyBalloon612!!",
-		"path": "/public_html/dgm3760/09_hobbies",
+		"path": "/public_html/dgm3760/09_categories",
 
 		"upload_on_save": true, // set *false* if you do not want to upload on save!
 
