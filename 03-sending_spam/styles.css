@@ -7,6 +7,36 @@ body {
     background-size: 100%;
 }
 
+nav {
+	background-color: #ddd;
+	width: 26.5%;
+	text-decoration: none;
+}
+
+.message span {
+	float: left;
+}
+
+nav ul {
+	margin: 20px;
+	padding: 20px;
+	text-decoration: none;
+}
+
+nav ul li {
+	padding-right: 10px;
+	text-decoration: none;
+	display: block;
+	float: left;
+}
+
+nav ul li a {
+	color: #000;
+	text-decoration: none;
+	border-right: #000 solid 1px;
+	padding-right: 10px;
+}
+
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
@@ -14,7 +44,7 @@ h1 {
 }
 
 form {
-	float: right;
+	float: left;
 	margin: 20px;
 }
 
@@ -53,5 +83,34 @@ input.submitBtn {
 	border-radius: 0px;
 	background-color: #242f40;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+footer {
+	color: #000;
+	background-color: #ddd;
+	width: 26.5%;
+	text-decoration: none;
+}
+
+footer ul {
+	margin: 20px;
+	padding: 25px;
+	text-decoration: none;
+}
+
+footer ul li {
+	color: #000;
+	padding-right: 10px;
+	margin-bottom:25px;
+	text-decoration: none;
+	display: block;
+	float: left;
+}
+
+footer ul li a {
+	color: #000;
+	text-decoration: none;
+	border-right: #000 solid 1px;
+	padding-right: 10px;
 }
 

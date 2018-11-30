@@ -43,9 +43,12 @@ mysqli_close($databaseconnection);
 <!DOCTYPE html>
 <html>
 <head>
+	<?php include_once('nav.php'); ?>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-You have sent email to blah
+<p>You have sent email to blah</p>
+<?php require_once('footer.php'); ?>
 </body>
 </html>

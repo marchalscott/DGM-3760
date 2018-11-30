@@ -21,9 +21,12 @@ mysqli_close($databaseconnection);
 <!DOCTYPE html>
 <html>
 <head>
+	<?php include_once('nav.php'); ?>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-Thank you for signing up for the newsletter.
+<p>Thank you for signing up for the newsletter.</p>
+<?php require_once('footer.php'); ?>
 </body>
 </html>

@@ -14,11 +14,11 @@ $result = mysqli_query($dbconnection, $query) or die ('Query failed');
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Remove Employees</title>
+	<title>All Employees</title>
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h1>Delete Employee</h1>
+<h1>All Employee</h1>
 
 <?php
 
