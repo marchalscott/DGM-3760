@@ -1,0 +1,39 @@
+body {
+	font-family: Helvetica;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+p a {
+	color: black;
+	text-decoration: none;
+	border: #000 solid 1px;
+	padding: 5px;
+}
+
+p a:hover {
+	background-color: rgb(0, 0, 0, 0.2);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	border: #000 solid 1px;
+	margin: 2px;
+	padding: 5px;
+}
+
+a:hover {
+	background-color: rgb(0, 0, 0, 0.2);
+}
+
+article {
+	display: block;
+	padding-bottom: 20px;
+}
