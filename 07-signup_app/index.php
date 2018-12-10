@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
-    <title>Stay Up 2 Date</title>
+    <title>Section 7</title>
   </head>
   <body>
     <div id="container">

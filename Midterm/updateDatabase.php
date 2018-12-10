@@ -27,6 +27,7 @@ mysqli_close($dbconnection);
 <head>
 	<title>Employee Successfully Added</title>
 	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 
@@ -39,6 +40,8 @@ mysqli_close($dbconnection);
 	echo "$photo <br/>";
 	echo '<img src="'.$filepath.$filename.'" alt="Employee Image"';
 	?>
+
+<?php require_once('footer.php'); ?>
 
 </body>
 </html>

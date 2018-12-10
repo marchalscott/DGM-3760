@@ -1,4 +1,5 @@
 <?php
+require_once('authorize.php');
 $employee_id = $_GET[id];
 
 
@@ -44,29 +45,29 @@ $found = mysqli_fetch_array($result);
 					---------------------------
 				</option>
 				<option>
-					Animation
+					IT Department
 				</option>
 				<option>
-					Audio
+					Marketing
 				</option>
 				<option>
-					Digital Film
+					Accounting
+				</option>
+				<option>
+					Warehouse
+				</option>
+				<option>
+					Sales
+				</option>
+				<option>
+					Management
 				</option>
 			</select></label>
 		</fieldset>
 
 		<input type="hidden" name="id" value="<?php echo $found['id']; ?>">
-
-
 		<input type="submit" value="Update Employee" class="submitBtn">
 	</form>
 </body>
-<footer>
-	<div>
-		<ul>
-			<li><a href="https://marchaleardley.com/dgm3760/Midterm/">Add</a></li>
-			<li><a href="https://marchaleardley.com/dgm3760/Midterm/delete.php">Delete</a></li>
-		</ul>
-	</div>
-</footer>
+<?php require_once('footer.php'); ?>
 </html>

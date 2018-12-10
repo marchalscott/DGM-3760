@@ -16,7 +16,7 @@ $result = mysqli_query($dbconnection, $query) or die ('query failed');
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Blog</title>
+	<title>Section 6</title>
 	<link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>

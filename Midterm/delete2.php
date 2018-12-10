@@ -1,4 +1,5 @@
 <?php 
+require_once('authorize.php');
 $employee_id = $_GET[id];
 
 //BUILD A DATABASE CONNECTION WITH host, user, pass, database
@@ -52,14 +53,16 @@ $found = mysqli_fetch_array($result);
 	<form action="delete2.php" method="POST">
 		<?php
 			//display what we found
-		echo '<h2>' .$found['first'] .' '. $found['last'].'</h2';
+		echo '<img src="employees/'.$found['photo'].'" ';
 		echo '<p>';
-		echo $found['dept']. '<br>' .$found['phone'];
+		echo '<h2>' .$found['first'] .' '. $found['last'].'</h2>';
+		echo $found['dept']. ' <br>' .$found['phone']. '<br>';
+		echo $found['email'];
 		echo '</p>';
 		?>
 
-		<input type="hidden" name="photo" value="employees/<?php echo $found['photo']; ?>">
-		<input type="hidden" name="id" value="<?php echo $found['id']; ?>">
+		<input type="hidden" name="photo" value="employees/<?php echo $found['photo'];?>">
+		<input type="hidden" name="id" value="<?php echo $found['id'];?>">
 		<input type="submit" name="submit" value="DELETE THE PERSON">
 		&nbsp; <a href="delete.php"> Cancel </a>
 	</form>

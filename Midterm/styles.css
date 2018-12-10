@@ -1,26 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END OF CSS RESET*/
+
 @charset "UTF-8";
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	background-repeat: no-repeat;
     background-size: 100%;
+}
+
+nav {
+	background-color: white;
+	display: block;
+	margin: 0 auto;
+	float: left;
+	margin-bottom: 30px;
+	width: 50%;
+	text-decoration: none;
+}
+
+nav ul {
+	display: block;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+nav ul li {
+	display: block;
+	float: left;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+nav ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #cca436;
 }
 
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
-	margin: 0 auto;
 	max-width: 50%;
 	padding: .5em;
+	font-size: 20px;
+}
+
+.clearfix {
+  clear: both; 
 }
 
 fieldset {
 	background-color: #242f40;
 	color: #fff;
 	border-radius: 0em;
-	margin: 0 auto;
 	border: #000 solid 1px;
-	max-width: 50%;
+	width: 30%;
+	margin: 10px;
 }
 
 legend {
@@ -34,11 +120,25 @@ legend {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.2em;
 	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+p label {
+	margin: -5px;
+}
+
+label {
+	margin: 0px 0px 5px 5px;
+}
+
+label input {
+	margin: 0px 0px 5px 0px;
 }
 
 label span {
 	font-size: .8em;
 	color: #fff;
+	margin: 5px;
 }
 
 input.submitBtn {
@@ -49,19 +149,43 @@ input.submitBtn {
 	border-radius: 0px;
 	background-color: #242f40;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-	margin: 0 auto;
+}
+
+p {
+	margin: 10px;
+}
+
+p a {
+	color: white;
+	width: 5%;
+	margin: 5px 0px 10px 0px;
+	display: block;
+	text-decoration: none;
+	border: #cca436 solid 1px;
+	background-color: #242f40;
+	padding: 5px;
+	text-align: center;
+}
+
+p a:hover {
+	color: #cca436;
 }
 
 
 footer {
-	background-color: black;
+	background-color: white;
 	display: block;
 	margin: 0 auto;
+	float: left;
+	margin-top: 30px;
+	width: 50%;
+	text-decoration: none;
 }
 
 footer ul {
 	display: block;
 	margin: 0 auto;
+	text-decoration: none;
 }
 
 footer ul li {
@@ -69,5 +193,14 @@ footer ul li {
 	float: left;
 	margin: 0 auto;
 	padding: 10px;
+}
+
+footer ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	color: #cca436;
 }
 

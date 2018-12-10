@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Send</title>
+	<title>Section 3</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
@@ -9,9 +9,9 @@
 <h1>Stay up to date</h1>
 
 <span class="message"><a href="makeMessage.php">Make a Message</a></span>
-<form action="saveToDatabase.php" method="POST" enctype="multipart/form-data" name="travelInfo">
+<form class="clearfix" action="saveToDatabase.php" method="POST" enctype="multipart/form-data" name="travelInfo">
 <!--Guide Personal Info-->
-	<fieldset>
+	<fieldset class="clearfix">
 		<legend>
 			Stay Up to Date
 		</legend>
@@ -20,35 +20,6 @@
 		<label><p>Email:</p><input type="email" name="email" value="joeschmoe@gmail.com" placeholder="joeschmoe@gmail.com" required></label>
 		<input type="submit" value="Submit" class="submitBtn">
 	</fieldset>
-<!--End Personal Info-->
-
-<!--Guide Fieldset-->
-	<!--<fieldset>
-			<legend>Guide</legend>
-			<label>
-				<span>Preferred Tour Guide</span>
-				<input type="text" name="tourguide" list="guide">
-				<datalist id="guide">
-					<option value="Ricky Bobby">Ricky Bobby</option>
-					<option value="Joe Schmoe">Joe Schmoe</option>
-					<option value="Lucky Duck">Lucky Duck</option>
-				</datalist>
-			</label>
-	</fieldset>-->
-<!--End Guide Fieldset-->
-
-<!--Guide Destination-->
-	<!--<fieldset>
-		<legend>Mexico Destination</legend>
-		<label>Please Select:
-			<select name="destination">
-				<option value="Herods Tour">Herods Romen Theater</option>
-				<option value="Under Water Museum">Under Water Museum</option>
-				<option value="Temple to the divine Caesar">Temple to the divine Caesar</option>
-				<option value="Bvzantine Church">Bvzantine Church</option>
-		</label>
-	</fieldset>-->
-<!--End Guide Destination-->
 </form>
 </body>
 </html>

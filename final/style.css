@@ -1,0 +1,66 @@
+body {
+	font-family: 'Helvetica', roboto;
+}
+
+nav {
+	text-decoration: none;
+	margin-left: -45px;
+	background-color: #85b4e0;
+}
+
+nav ul {
+	text-decoration: none;
+}
+
+nav ul li {
+	text-decoration: none;
+	display: block;
+	float: left;
+}
+
+nav ul li a {
+	color: black;
+	margin: 5px;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #85b4e0;
+}
+
+p {
+	display: block;
+	float: left;
+}
+
+p a {
+	color: black;
+	margin: 5px;
+	text-decoration: none;
+}
+
+p a:hover {
+	color: #85b4e0;
+}
+
+h2 {
+	display: block;
+	float: left;
+}
+
+button {
+	color: white;
+	margin: 5px;
+	padding: 5px;
+	background-color: #85b4e0;
+	text-decoration: none;
+	border: #85b4e0 solid 1px;
+}
+
+button:hover {
+	background-color:rgba(133,180,224,0.8);
+}
+
+.clearfix {
+	clear: both;
+}

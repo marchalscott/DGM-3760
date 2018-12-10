@@ -2,6 +2,7 @@
 //load the post data into PHP variables
 $first            = $_POST[first];
 $last             = $_POST[last];
+$email			  = $_POST[email];
 $department       = $_POST[dept];
 $phone            = $_POST[phone];
 $photo            = $_POST[photo];
@@ -50,8 +51,8 @@ if($validImage == true) {
 $dbconnection = mysqli_connect('localhost','marchale_3760usr','s0l0w00k1E2000','marchale_3760') or die ('Connection to the database failed');
 
 //BUILD THE QUERY
-$query = "INSERT INTO employee_simple (first, last, interest, specialization, dept, phone, photo)".
-"VALUES ('$first','$last', '$interest','$specialization','$department', '$phone', '$filename')";
+$query = "INSERT INTO employee_simple (first, last, email, interest, specialization, dept, phone, photo)".
+"VALUES ('$first','$last','$email', '$interest','$specialization','$department', '$phone', '$filename')";
 
 //NOW TRY AND TALK TO THE DATABASE
 $result = mysqli_query($dbconnection, $query) or die ('Query failed');
@@ -61,7 +62,7 @@ mysqli_close($dbconnection);
 
 
 } else {
-	echo '<a href="marchaleardley.com/05-manage_records>Please try again</a>';
+	echo '<a href="marchaleardley.com/Midterm>Please try again</a>';
 };
 
 ?>
@@ -70,27 +71,25 @@ mysqli_close($dbconnection);
 <html>
 <head>
 	<title>Employee Successfully Added</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 	<h1>Employee Successfully Added</h1>
+	<?php require_once('nav.php'); ?>
 	<?php
-
+	echo '<p class="clearfix">';
 	echo "$first $last <br/>";
 	echo "$department <br/>";
 	echo "$phone <br/>";
+	echo "$email<br/>";
 	echo "$interest <br/>";
 	echo "$specialization <br/>";
 	echo "$photo <br/>";
 	echo '<img src="'.$filepath.$filename.'" alt="Employee Image"';
+		echo '</p>';
 	?>
 
 </body>
-<footer>
-	<div>
-		<ul>
-			<li><a href="https://marchaleardley.com/dgm3760/Midterm/">Add</a></li>
-			<li><a href="https://marchaleardley.com/dgm3760/Midterm/delete.php">Delete</a></li>
-		</ul>
-	</div>
-</footer>
+<?php require_once('footer.php'); ?>
 </html>

@@ -1,4 +1,4 @@
-<h1>DGM Student Finder</h1>
+<h1>Employee Finder</h1>
 
 <nav>
 	<ul>

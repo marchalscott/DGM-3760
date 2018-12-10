@@ -55,7 +55,7 @@ function convertMonth($a) {
  <!DOCTYPE html>
  <html>
  <head>
- 	<title>Category Submitions</title>
+ 	<title>Section 9</title>
  	<link href="styles.css" rel="stylesheet" type="text/css">
  </head>
  <body>

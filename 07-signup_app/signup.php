@@ -3,8 +3,9 @@ require_once('vars.php');
 //BUILD THE DATABASE CONNECTION WITH host, user, pass, database
 $dbconnection = mysqli_connect(HOST, USER, PASS, DB_NAME) or die ('Connection to the database failed');
 
+print_r($_POST);
 //-----IF USER HAS FILLED OUT THE FORM AND CLICKED THE SUBMIT BUTTON THEN DO SOMETHING
-if (isset($_POST['submit'])) {
+if (isset($_POST['username'])) {
 
   $firstname  = mysqli_real_escape_string($dbconnection,trim($_POST['firstname']));
   $lastname   = mysqli_real_escape_string($dbconnection,trim($_POST['lastname']));
@@ -21,7 +22,7 @@ if (isset($_POST['submit'])) {
 
   if (mysqli_num_rows($alreadyexists) == 0){
     //INSERT THE DATA
-    $query = "INSERT INTO users (firstname, lastname, username, password, date) VALUES ('$firstname','$lastname','$username', SHA('$password1'), NOW() )";
+    $query = "INSERT INTO users (firstname, lastname, username, password, date_now) VALUES ('$firstname','$lastname','$username', SHA('$password1'), NOW() )";
     mysqli_query($dbconnection, $query) or die ('insert query failed');
 
     //CONFIRM MESSAGE
@@ -38,7 +39,7 @@ if (isset($_POST['submit'])) {
 
 
     //EXIT THE PAGE
-    //exit();
+    exit();
 
 
   }else {

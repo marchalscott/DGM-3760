@@ -21,7 +21,7 @@ $result = mysqli_query($dbconnection, $query) or die ('query failed');
  <!DOCTYPE html>
  <html>
  <head>
- 	<title>Show all Students</title>
+ 	<title>Section 8</title>
  	<link href="styles.css" rel="stylesheet" type="text/css">
  </head>
  <body>
@@ -40,23 +40,26 @@ $result = mysqli_query($dbconnection, $query) or die ('query failed');
  	echo '<p>';
  	//TERNARY OPERATOR -- REPLACES AN IF ELSE
  	echo ($row['gender']==1 ? 'Mr. ' : 'Ms. ') . $row['last'];
- 	echo ' is a Digital Media student emphasizing in '. $row['value'].'</>';
+ 	echo ' is an employee with the following skills in '. $row['value'].'</>';
 
+ 	//FIND SOFTWARE SKILLS
  	echo '<p>';
  	echo ($row['gender']==1 ? 'He ' : 'She ');
- 	echo 'is competent with the following software pckages:</p>';
+ 	echo 'is competent with the following software packages:</p><hr/>';
+
+
 
  	//ASSIGN THE USER TO A VARIABLE TO BE USED IN THE NEXT QUERY
  	$theid = $row['id'];
 
  	//BUILD ANOTHER INNER JOIN QUERY
- 	$query2 = "SELECT * FROM dgm_softwareskill INNER JOIN dgm_packages ON (dgm_softwareskill.package_id = dgm_softwareskill.package_id) WHERE id=$theid";
+ 	$query2 = "SELECT * FROM dgm_softwareskill INNER JOIN dgm_packages ON (dgm_softwareskill.package_id = dgm_packages.package_id) WHERE id=$theid";
 
  	//NOW TRY AND TALK TO THE DATABASE
- 	$result2 = mysqli_query($dbconnection, $query2) or die ('Query Failed');
+ 	$resultPackage = mysqli_query($dbconnection, $query2) or die ('Query Failed');
 
- 	while ($row2 = mysqli_fetch_array($resut2)) {
-    echo '<p>' . $row2['value'] . '</p>';
+ 	while ($row2 = mysqli_fetch_array($resutPackage)) {
+    echo '<p class="pkgs">'.$row2['packages'].'</p>';
         };
 
     echo '</div>';

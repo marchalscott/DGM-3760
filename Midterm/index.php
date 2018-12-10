@@ -1,3 +1,6 @@
+<?php 
+require_once('authorize.php');
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,15 +10,18 @@
 </head>
 <body>
 	<h1>Employee Information</h1>
+	<?php require_once('nav.php'); ?>
+    <div class="contianer">
 	<form action="saveToDatabasePractice.php" enctype="multipart/form-data" id="travelInfo" method="post" name="travelInfo">
 
 		<!--Emplyee Information-->
-		<fieldset>
+		<fieldset class="clearfix">
 			<legend>Personal Information</legend> <label></label>
 			<p><label>First Name</label></p><label><input name="first" pattern="[a-zA-Z ]{1,99}" placeholder="Full Name" required="" type="text" value="Marchal"></label> <label></label>
 			<p><label>Last Name</label></p><label><input name="last" pattern="[a-zA-Z ]{1,99}" placeholder="Full Name" required="" type="text" value="Eardley"></label> <label></label>
+			<p><label>Email</label></p><label><input name="email" placeholder="Email" required="" type="email" value="Email"></label>
 			<p><label>Phone</label></p><label><input name="phone" placeholder="xxx-xxx-xxxx" required="" type="phone" value="801-123-4567"></label>
-			<p><label>Interest</label></p><label><input name="interest" placeholder="Areas of interest" required="" type="interest" value="Area of interest"></label>
+			<p><label>Expertise</label></p><label><input name="interest" placeholder="Areas of expertise" required="" type="interest" value="Area of expertise"></label>
 		</fieldset>
 
 		<!--Area of expertise-->
@@ -29,16 +35,22 @@
 			<legend>Department</legend>
 			<label> <span>Please Select:</span> <select name="dept">
 				<option>
-					Internet Technologies
+					IT Department
 				</option>
 				<option>
-					Animation
+					Marketing
 				</option>
 				<option>
-					Audio
+					Accounting
 				</option>
 				<option>
-					Digital Film
+					Warehouse
+				</option>
+				<option>
+					Sales
+				</option>
+				<option>
+					Management
 				</option>
 			</select></label>
 		</fieldset>
@@ -56,13 +68,7 @@
 
 		<input type="submit" value="Submit" class="submitBtn">
 	</form>
-</body>
-<footer>
-	<div>
-		<ul>
-			<li><a href="https://marchaleardley.com/dgm3760/Midterm/">Add</a></li>
-			<li><a href="https://marchaleardley.com/dgm3760/Midterm/delete.php">Delete</a></li>
-		</ul>
 	</div>
-</footer>
+</body>
+<?php require_once('footer.php'); ?>
 </html>

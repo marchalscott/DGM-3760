@@ -36,7 +36,7 @@
 			<fieldset>
 				<legend>Comment</legend>
 				<label>
-					<span>Pick a photo of this employee</span>
+					<span>Comment</span>
 					<input type="text" name="comment"><br/>
 				</label>
 			</fieldset>

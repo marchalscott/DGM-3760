@@ -21,7 +21,7 @@ while ($row = mysqli_fetch_array($result)) {
 
 	mail($to, $subject, $newMessage, 'From:'.$from);
 
-	echo 'Message Sent to' . $to . '<br/>';
+	echo 'Message Sent to ' . $to . '<br/>';
 
 };
 
@@ -43,12 +43,10 @@ mysqli_close($databaseconnection);
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include_once('nav.php'); ?>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<p>You have sent email to blah</p>
 <?php require_once('footer.php'); ?>
 </body>
 </html>

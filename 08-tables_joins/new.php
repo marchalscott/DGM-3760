@@ -17,13 +17,13 @@ $resultPackage = mysqli_query($dbconnection, $query) or die ('Query Failed');
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add a New Student</title>
+	<title>Add a New Employee</title>
 	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <?php include_once('nav.php'); ?>
 
-<h2>Add a New Student</h2>
+<h2>Add a New Employee</h2>
 <form action="saveToDatabase.php" method="POST">
 	<fieldset>
 		<legend>Personal Inforation</legend>
@@ -39,7 +39,7 @@ $resultPackage = mysqli_query($dbconnection, $query) or die ('Query Failed');
 		<label><input type="radio" name="gender" value="2"><span>Female</span></label>
 	</fieldset>
 	<fieldset>
-		<legend>Emphasis</legend>
+		<legend>Department</legend>
 		<label><p>Please select an emphasis:</p>
 		<select name="emphasis">
 			<option>Please Select...</option>

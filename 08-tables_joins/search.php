@@ -7,16 +7,13 @@ $query = "SELECT * FROM dgm_emphasis ORDER BY value";
 
 //TALK WITH DATABASE
 $result = mysqli_query($dbconnection, $query) or die ('Query Failed');
-
-
-
  ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Search DGM Students</title>
-	<!--<link href="styles.css" rel="stylesheet" type="text/css">-->
+	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <?php include_once('nav.php'); ?>

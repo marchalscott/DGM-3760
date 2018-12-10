@@ -1,5 +1,5 @@
 <?php
-//require_once('vars.php');
+require_once('vars.php');
 //DEFAULT MESSAGE TO USERNAME
 $feedback = '<p><a href="signup.php">Create an account</a></p>';
 
@@ -7,7 +7,6 @@ $feedback = '<p><a href="signup.php">Create an account</a></p>';
 if (isset($_POST['submit'])) {
 
 //CONNECT TO THE DATABASE
-//BUILD A DATABASE CONNECTION WITH host, user, pass, database
 $dbconnection = mysqli_connect('localhost','marchale_3760usr','s0l0w00k1E2000','marchale_3760') or die ('Connection to the database failed');
 
 $username = mysqli_real_escape_string($dbconnection, trim($_POST['username']));
@@ -33,7 +32,7 @@ if(mysqli_num_rows($data) == 1) {
 
 
   }//END IF
-} //END POST
+} //END ISSET
 
  ?>
 
@@ -48,14 +47,15 @@ if(mysqli_num_rows($data) == 1) {
   <body>
     <div id="container">
       <h1>Log In</h1>
-      <?php echo $feedback; ?>
-      <form method="post" action="login.php">
+      <?php echo $feedback; 
+      ?>
+      <form method="POST" action="login.php">
         <fieldset>
           <legend>Log in to an exisitng account</legend>
           <label><p>Username:</p><input type="text" name="username" value="<?php if (!empty($username)) echo $username; ?>"/></label>
           <label><p>Password</p><input type="password" name="password"/></label>
         </fieldset>
-        <button><input type="submit" name="submit" value="Log In"/></button>
+        <button><input type="submit" name="submit" value="submit"/></button>
       </form>
 
       <p><a href="index.php">Cancel</a></p>
